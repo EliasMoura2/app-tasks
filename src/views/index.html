@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- FORM -->
+      <div class="col-md-5">
+        <div class="car">
+          <div class="card-body">
+            <form action="/create" method="POST">
+              <div class="form-group">
+                <input type="text" name="title" id="" placeholder="Insert a Title" class="form-control">
+              </div>
+              <div class="form-group">
+                <textarea name="description" id="" cols="80" placeholder="Insert a Description" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Add
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- List -->
+      <div class="col-md-7">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Operations</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <ol>
+    <ul>express</ul>
+    <ul>morgan</ul>
+    <ul>mongoose</ul>
+    <ul>pug</ul>
+    <ul>dotenv</ul>
+    <ul>nodemon</ul>
+  </ol>
+  <footer>
+    Elias Moura
+    <a href="www.google.com.ar"><i class="fas fa-edit">a</i></a>
+    <a href="www.github.com.ar"><i class="fas fa-trash-alt">b</i></a>
+  </footer>
+</body>
+</html>

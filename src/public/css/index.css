@@ -1,0 +1,51 @@
+/* html, body{
+  margin: 0;
+  padding: 0;
+} */
+
+
+body{
+  /* background-color: blue; */
+}
+
+.introduction{
+  background-color: black;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  /* font-size: 2.5rem; */
+}
+
+.introduction h2{
+  margin: 0;
+  padding: 0;
+}
+
+.operations{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .introduction ul {
+  color: rgb(26, 129, 17);
+} */
+/*
+.container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-bar{
+  background-color: teal;
+  width: 10%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+} */
