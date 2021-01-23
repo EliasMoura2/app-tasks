@@ -24,9 +24,9 @@ block content
             </li>
   .container
     .row
-      // FORM
+      //FORM
       .col-md-5
-        .car
+        .car(style='width: 22rem;')
           .card-body
             form(action='/create' method='POST')
               .form-group
@@ -35,7 +35,7 @@ block content
                 textarea.form-control(name='description' id='' cols='80' placeholder='Insert a Description')
               button.btn.btn-primary.btn-block(type='submit')
                 | Add
-      // List
+      // LIST
       .col-md-7
         table.table.table-bordered.table-hover
           thead
