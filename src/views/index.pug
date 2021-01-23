@@ -62,18 +62,26 @@ block content
               tr
                 td(scope='row')
                   = index + 1 
-                td
-                  = task.title
-                td
-                  = task.description
+                if !task.status
+                  td
+                    = task.title
+                else
+                  td(style="text-decoration:line-through;")
+                    = task.title
+                if !task.status
+                  td
+                    = task.description
+                else
+                  td(style="text-decoration:line-through;")
+                    = task.description
                 td
                   .operations
-                    a(href='#')
+                    a(href=`/turn/${task._id}`)
                       if !task.status
                         i.far.fa-square
                       else
                         i.far.fa-check-square
-                    a(href='#')
+                    a(href=`/update/${task._id}`)
                       i.fas.fa-edit
                     //- form.inline(method='POST' action='/delete/' + task._id )
                     //-   input(type='hidden' name='id' value=task._id)
@@ -90,40 +98,40 @@ block content
                 td(colspan='4')
                   | There are no tasks
   // Contact
-  section.contact-section.bg-black
-      .container
-        .row
-          .col-md-4.mb-3.mb-md-0
-            .card.py-4.h-100
-              .card-body.text-center
-                i.fas.fa-map-marked-alt.text-primary.mb-2
-                h4.text-uppercase.m-0 Address
-                hr.my-4
-                .small.text-black-50 Posadas, Misiones, Argentina
-          .col-md-4.mb-3.mb-md-0
-            .card.py-4.h-100
-              .card-body.text-center
-                i.fas.fa-envelope.text-primary.mb-2
-                h4.text-uppercase.m-0 Email
-                hr.my-4
-                .small.text-black-50
-                  a(href='d.eliasmoura2@gmail.com') d.eliasmoura2@gmail.com
-          .col-md-4.mb-3.mb-md-0
-            .card.py-4.h-100
-              .card-body.text-center
-                i.fas.fa-mobile-alt.text-primary.mb-2
-                h4.text-uppercase.m-0 Phone
-                hr.my-4
-                .small.text-black-50 +54 (376) 4151874
-          .social.d-flex.justify-content-center
-            a.mx-2(href='https://www.linkedin.com/in/elias-moura/' target='_black')
-              i.fab.fa-linkedin
-            a.mx-2(href='https://github.com/EliasMoura2' target='_black')
-              i.fab.fa-github
-            a.mx-2(href='https://www.facebook.com/elias.moura.5/' target='_black')
-              i.fab.fa-facebook-f
-            a.mx-2(href='https://www.instagram.com/d.eliasmoura/' target='_black')
-              i.fab.fa-instagram
+  //- section.contact-section.bg-black
+  //-     .container
+  //-       .row
+  //-         .col-md-4.mb-3.mb-md-0
+  //-           .card.py-4.h-100
+  //-             .card-body.text-center
+  //-               i.fas.fa-map-marked-alt.text-primary.mb-2
+  //-               h4.text-uppercase.m-0 Address
+  //-               hr.my-4
+  //-               .small.text-black-50 Posadas, Misiones, Argentina
+  //-         .col-md-4.mb-3.mb-md-0
+  //-           .card.py-4.h-100
+  //-             .card-body.text-center
+  //-               i.fas.fa-envelope.text-primary.mb-2
+  //-               h4.text-uppercase.m-0 Email
+  //-               hr.my-4
+  //-               .small.text-black-50
+  //-                 a(href='d.eliasmoura2@gmail.com') d.eliasmoura2@gmail.com
+  //-         .col-md-4.mb-3.mb-md-0
+  //-           .card.py-4.h-100
+  //-             .card-body.text-center
+  //-               i.fas.fa-mobile-alt.text-primary.mb-2
+  //-               h4.text-uppercase.m-0 Phone
+  //-               hr.my-4
+  //-               .small.text-black-50 +54 (376) 4151874
+  .social.d-flex.justify-content-center
+    a.mx-2(href='https://www.linkedin.com/in/elias-moura/' target='_black')
+      i.fab.fa-linkedin
+    a.mx-2(href='https://github.com/EliasMoura2' target='_black')
+      i.fab.fa-github
+    a.mx-2(href='https://www.facebook.com/elias.moura.5/' target='_black')
+      i.fab.fa-facebook-f
+    a.mx-2(href='https://www.instagram.com/d.eliasmoura/' target='_black')
+      i.fab.fa-instagram
   // Footer
   footer.footer.bg-black.small.text-center.text-white-50
     | Copyright © Your Website 2020
