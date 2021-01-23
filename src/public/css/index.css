@@ -28,6 +28,20 @@ body{
   justify-content: space-around;
 }
 
+footer {
+  grid-area: footer;
+  padding: 10px;
+  background-color: #161616;
+  text-align: center;
+  color: whitesmoke;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+}
+
+
 /* .introduction ul {
   color: rgb(26, 129, 17);
 } */
