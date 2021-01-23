@@ -23,19 +23,6 @@ block content
             </ul>
             </li>
   .container
-    //- .introduction
-    //-   h2 Welcome
-    //-   p
-    //-     | Bienvenido esta es un crud de tareas desarrollado en node.js
-    //-     br
-    //-     | los paquetes utilizados son:
-    //-     ul
-    //-       li express
-    //-       li morgan
-    //-       li mongoose
-    //-       li pug
-    //-       li dotenv
-    //-       li nodemon
     .row
       // FORM
       .col-md-5
@@ -83,16 +70,8 @@ block content
                         i.far.fa-check-square
                     a(href=`/update/${task._id}`)
                       i.fas.fa-edit
-                    //- form.inline(method='POST' action='/delete/' + task._id )
-                    //-   input(type='hidden' name='id' value=task._id)
-                    //-   button.link-button(type='submit' name='submit_param', value="submit_value" class="btn") Eliminar
                     a(href=`/delete/${task._id}`)
                       i.fas.fa-trash-alt
-
-                //- td
-                //-   form.inline(method='post' action='delete/' + task.id )
-                //-     input(type='hidden' name='id' value= task.id)
-                //-     button.link-button(type='submit' name='submit_param', value="submit_value" class="btn") Eliminar
             else
               tr
                 td(colspan='4')
@@ -134,4 +113,4 @@ block content
       i.fab.fa-instagram
   // Footer
   footer.footer.bg-black.small.text-center.text-white-50
-    | Copyright © Your Website 2020
+    | Copyright © Elias Moura
