@@ -25,11 +25,11 @@ App ssr para la creacion de tareas, desarrollada en Node.js.
 ```
 - Mira **Despliegue** para conocer como desplegar el proyecto.
 ## Tools, Packages 🛠️
-Dependecies:
-1. [Express](https://expressjs.com/)
-2. [morgan](https://www.npmjs.com/package/morgan)
-3. [dotenv](https://www.npmjs.com/package/dotenv)
-4. [mongoose](https://mongoosejs.com/)
-5. [pug](https://pugjs.org/api/getting-started.html)
-Dev Dependecies:
-6. [nodemon](https://nodemon.io/)
+1. Dependecies:
+   1. [Express](https://expressjs.com/)
+   2. [morgan](https://www.npmjs.com/package/morgan)
+   3. [dotenv](https://www.npmjs.com/package/dotenv)
+   4. [mongoose](https://mongoosejs.com/)
+   5. [pug](https://pugjs.org/api/getting-started.html)
+2. Dev Dependecies:
+   1. [nodemon](https://nodemon.io/)
