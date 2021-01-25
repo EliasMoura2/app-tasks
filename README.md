@@ -8,12 +8,12 @@ App ssr para la creacion de tareas, desarrollada en Node.js.
 2. crear un archivo .env con los siguientes datos:
 ```
   NODE_ENV = development
-  PORT = 3000
+  PORT = aPort
   HOST = http://localhost
 
   DB_PORT = 27017
   DB_HOST = localhost
-  DB_NAME = nameBD
+  DB_NAME = aNameDB
 ```
 3. Instalar dependencias:
 ```
