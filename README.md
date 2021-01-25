@@ -1,4 +1,4 @@
-# app-tasks
+# App-tasks
 App ssr para la creacion de tareas, desarrollada en Node.js.
 ## Comenzando 🚀
 1. Clonar el proyecto: 
