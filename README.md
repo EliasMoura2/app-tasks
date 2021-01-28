@@ -26,10 +26,10 @@ CRUD ssr para la creacion de tareas, desarrollada en Node.js.
 - Mira **Despliegue** para conocer como desplegar el proyecto.
 ## Tools, Packages 🛠️
 1. Dependecies:
-   1. [Express](https://expressjs.com/)
-   2. [morgan](https://www.npmjs.com/package/morgan)
-   3. [dotenv](https://www.npmjs.com/package/dotenv)
-   4. [mongoose](https://mongoosejs.com/)
-   5. [pug](https://pugjs.org/api/getting-started.html)
+   - [Express](https://expressjs.com/)
+   - [morgan](https://www.npmjs.com/package/morgan)
+   - [dotenv](https://www.npmjs.com/package/dotenv)
+   - [mongoose](https://mongoosejs.com/)
+   - [pug](https://pugjs.org/api/getting-started.html)
 2. Dev Dependecies:
-   1. [nodemon](https://nodemon.io/)
+   - [nodemon](https://nodemon.io/)
